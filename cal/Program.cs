@@ -29,7 +29,6 @@ namespace cal
                            
                           Console.WriteLine(num1+num2);
                     Console.Read();
-
                           break;
                       case "-":
                     Console.WriteLine(num1 - num2);

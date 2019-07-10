@@ -8,10 +8,44 @@ namespace cal
 {
     class Program
     {
-       
+
 
         static void Main(string[] args)
         {
+
+            string c;
+            string check = "Y";
+
+            do
+            {
+
+
+
+                process();
+                Console.Write("Do you want to use a calculator? (Y/N) ");
+                c = Console.ReadLine();
+                string c1 = c.ToUpper();
+
+
+
+
+           
+            }
+         
+
+            while (c == check);
+
+
+
+            Console.Write("Good Bye");
+            Console.Read();
+            Environment.Exit(0);
+        }
+    
+        
+        public static void process()
+        {
+
             Console.Write("Input Num1 : ");
             int num1 = Convert.ToInt32(Console.ReadLine());
 
@@ -23,33 +57,34 @@ namespace cal
             int num2 = Convert.ToInt32(Console.ReadLine());
 
 
-                    switch (oper) 
-                {
-                      case "+" :
-                           
-                          Console.WriteLine(num1+num2);
-                    Console.Read();
-                          break;
-                      case "-":
-                    Console.WriteLine(num1 - num2);
-                    Console.Read();
-                    break;
-                      case "*":
-                    Console.WriteLine(num1 * num2);
-                    Console.Read();
-                    break;
-                      case "/":
-                    Console.WriteLine(num1 / num2);
-                    Console.Read();
-                    break;
-                      default:
-                        Console.WriteLine("Input Again");
-                        break;
-                }
+            switch (oper)
+            {
+                case "+":
 
+                    Console.WriteLine(num1 + num2);
+                    Console.ReadLine();
+                    break;
+                case "-":
+                    Console.WriteLine(num1 - num2);
+                    Console.ReadLine();
+                    break;
+                case "*":
+                    Console.WriteLine(num1 * num2);
+                    Console.ReadLine();
+                    break;
+                case "/":
+                    Console.WriteLine(num1 / num2);
+                    Console.ReadLine();
+                    break;
+                default:
+                    
+                    break;
+            }
 
 
 
         }
+
     }
-}
+ }
+

@@ -23,12 +23,8 @@ namespace cal
 
                 process();
                 Console.Write("Do you want to use a calculator? (Y/N) ");
-                c = Console.ReadLine();
-                string c1 = c.ToUpper();
-
-
-
-
+                c = Console.ReadLine().ToUpper();
+                
            
             }
          
@@ -47,16 +43,16 @@ namespace cal
         {
 
             Console.Write("Input Num1 : ");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            float num1 = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Input Operation (+),(-),(*),(/)  : ");
             string oper = Console.ReadLine();
 
 
             Console.Write("Input Num2 : ");
-            int num2 = Convert.ToInt32(Console.ReadLine());
+            float num2 = Convert.ToInt32(Console.ReadLine());
 
-
+            
             switch (oper)
             {
                 case "+":
